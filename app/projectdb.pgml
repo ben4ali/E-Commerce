@@ -1,0 +1,21 @@
+<project>
+    <documents></documents>
+    <dmdesigns>
+        <dmdesign active>
+            <dmdesignskill skill="plainhtml.colors">
+                <dmcolor key="primary" color="#0d6efd"/>
+                <dmcolor key="secondary" color="#6c757d"/>
+                <dmcolor key="color3" color="#0dcaf0"/>
+                <dmcolor key="color4" color="#198754"/>
+                <dmcolor key="white" color="white"/>
+                <dmcolor key="light" color="#f8f9fa"/>
+                <dmcolor key="dark" color="#212529"/>
+            </dmdesignskill>
+            <dmdesignskill skill="fonts"></dmdesignskill>
+            <dmdesignskill skill="headings"></dmdesignskill>
+            <dmdesignskill skill="background" image_for_colors="true"></dmdesignskill>
+            <dmdesignskill skill="plainhtml" reset="true"></dmdesignskill>
+        </dmdesign>
+    </dmdesigns>
+    <dmlocked plainhtml-colors-primary="false" plainhtml-colors-secondary="false" plainhtml-colors-color3="false" plainhtml-colors-color4="false" plainhtml-colors-white="true" plainhtml-colors-light="true" plainhtml-colors-dark="true"></dmlocked>
+</project>

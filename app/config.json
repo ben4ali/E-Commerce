@@ -1,0 +1,10 @@
+{
+  "db_info": {
+    "username": "root",
+    "password": "z2YrD8eZTMTskm7",
+    "address": "localhost",
+    "database": "boutique",
+    "port": 3306
+  },
+  "hCaptchaKey": "8d711b5a-ab00-4887-acb8-9deba844f487"
+}

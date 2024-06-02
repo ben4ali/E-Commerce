@@ -1,0 +1,375 @@
+body {
+    background-color: #ececec;
+}
+
+.main-div {
+    height: 90vh;
+    width: 100vw;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+#darkModeButton {
+    padding: 10px;
+    background-color: rgb(255,255,255,0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mainContainer-auth {
+    height: 90vh;
+    margin-top: 5vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+.mainContainer-signIn {
+    height: auto;
+    flex-grow: 1;
+    margin-top: 5vh;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+.logoBox {
+    flex: 0;
+}
+
+.signUpBox {
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 150px;
+
+}
+
+.merchantBox {
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.loginBox {
+    font-family: 'Poppins', sans-serif;
+}
+
+.loginBox > form > div > input {
+    border-radius: 10px;
+}
+
+.auth {
+    width: 300px;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.height-auto {
+    height: auto;
+}
+
+.profile-btn {
+    border: 1px solid rgba(128, 128, 128, 0.438);
+}
+
+.profileInfo-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.divider {
+    height: 50%;
+    width: 2px;
+    background-color: rgba(128, 128, 128, 0.459);
+    margin: 0 20px;
+}
+
+.header-height {
+    margin-bottom: 0;
+}
+input:invalid {
+    border: solid 2px #ff0019;
+}
+
+input:valid {
+    border: solid 2px #18E109;
+    background-color: #fff;
+}
+
+/** animation pour les éléments dans la loginBox */
+@keyframes slideFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.loginBox * {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.loginBox * {
+    animation: slideFromBottom 0.3s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+/** animation pour le fade in de l'image logo */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-div > .mainContainer-auth > .logoBox > img {
+    opacity: 0;
+    animation: fadeIn 0.3s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.main-div > .mainContainer-signIn > img {
+    opacity: 0;
+    animation: fadeIn 0.3s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+
+.color-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 75px;
+    margin-inline: 0.75rem;
+
+}
+
+.imgSelectbtn {
+    margin-inline: 0.5rem;
+    width: 50px;
+}
+
+.starRatingstyle {
+    height: 40px;
+    margin-inline: 0.25rem;
+}
+
+.imgProduitCommande {
+    height: 100px;
+}
+
+.sliderBoutton {
+    border: rgb(46, 46, 46) solid;
+    padding-inline: 25px;
+    border-radius: 25px;
+    opacity: 0.5;
+    margin-left: 25px;
+    color: rgb(46, 46, 46, 0);
+}
+
+.sliderBoutton:hover {
+    background-color: rgb(104, 104, 104);
+}
+
+.nav-link {
+    color: black;
+}
+
+.admin-frame {
+    height: 5vh;
+}
+
+.usrSelection:hover {
+    background-color: rgb(182, 182, 182);
+}
+
+.usrSelection:click {
+    background-color: rgb(182, 182, 182);
+}
+
+.admin-panel {
+    height: 70vh;
+}
+
+ul {
+    list-style: none;
+}
+.error {
+    border: 2px solid red;
+    background-color: #FFDDDD;
+    color: red;
+}
+.slctButton {
+    padding: 0;
+    border: none;
+    background: none;
+    width: 500px;
+    height: auto;
+    text-align: left;
+}
+
+#categoryPick {
+    text-decoration: none;
+    color: black;
+}
+
+.logoBase {
+    width: 70px;
+    height: 70px;
+}
+
+.navbar-custom {
+    text-decoration: none;
+}
+
+.navbar-text-input {
+    width: 55vh;
+}
+
+.product-box-small {
+    max-height: 75px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-box-small-div {
+    height: 150px;
+}
+
+.product-box-small-p {
+    text-align: center;
+    color: green;
+    font-weight: bold
+}
+
+.product-box-big {
+    max-height: 150px;
+    width: auto;
+}
+
+.product-box-big-div {
+    height: 400px;
+}
+
+.product-box-long {
+    max-height: 225px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-box-long-img {
+    width: 25px;
+}
+
+.card-price-text {
+    height: 32px;
+    width: 5px;
+}
+
+.product-box-long-card {
+    height: 150px;
+}
+
+.category-card {
+    width: 200px;
+    height: 200px;
+}
+
+.index-card-row {
+    margin-left: 60px
+}
+
+.index-card {
+    min-height: 300px;
+}
+
+.index-card-img {
+    height: auto;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+.ps-body {
+    height: 30vh;
+}
+
+.ps-footer {
+    height: 10vh;
+}
+
+@media (max-width: 700px) {
+    .logoBox {
+        margin-right: 15vh;
+    }
+
+    .loginBox {
+        margin-left: 15vh;
+    }
+
+    .signUpBox {
+        margin-left: 5vh;
+        margin-right: 3vh;
+    }
+
+    .main-div {
+        height: 225vh;
+        width: 100vw;
+    }
+
+    .merchantBox {
+        align-items: center;
+        justify-content: center;
+        margin-left: 13vh;
+    }
+
+    .merchantBox input,
+    .merchantBox select,
+    .merchantBox textarea {
+        width: 325px;
+
+    }
+
+    .merchantBox p,
+    .merchantBox h3 {
+        text-align: center;
+        margin-right: 10vh;
+
+    }
+
+    .mainContainer-auth {
+        display: flex;
+        flex-wrap: wrap;
+        height: 120vh;
+        margin-top: 5vh;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        border: 3px solid rgb(32, 32, 32);
+    }
+
+    .mainContainer-signIn {
+        display: flex;
+        flex-wrap: wrap;
+        height: 225vh;
+        margin-top: 5vh;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        border: 3px solid rgb(32, 32, 32);
+    }
+}
